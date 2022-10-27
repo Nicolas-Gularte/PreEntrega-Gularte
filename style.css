@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/fondo.jpeg);   
+    background-size: 100%;
+    margin-bottom: 150px;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+#foto-flor {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+                                                                              /* titulo */
+.titulo__principal {
+    color: white;
+    margin-right: 100px;
+}
+
+.titulo__secundario {
+    margin-left: 35%;
+    margin-right: 35%;
+    color: black;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 4px;
+    background-size: 300px;
+}
+                                                                               /* titulo */
+
+
+                                                                               /* foto */
+.foto__ninja--agachado {
+    width: 400px;
+    height: 400px;  
+}
+
+.foto__dojo {
+    width: 500px;
+    height: 500px;
+}
+
+.foto__mapa {
+    width: 500px;
+    height: 500px;
+}
+
+.profesor {
+    margin-left: 35.5%;
+    width: 550px;
+    height: 550px;  
+    }
+
+                                                                               /* foto */
+
+.w-30 {
+    width: 30%;
+}
+ul {
+    overflow: hidden;
+    list-style: none;
+    display: inline-block;
+}
+
+ol {
+    list-style: none;
+    display: grid;
+    text-align: center;
+}
+
+ul li {
+    float:right;
+}
+li a {
+    color: white;
+    display: block;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: red;
+}
+
+                                                                              /* contenedor */
+
+.contenedor {
+    display: flex;
+    margin-top: 50px;
+    background-color: rgba(63, 63, 63, 0.685);
+    padding: 10px;
+    color: white;
+}
+
+.contenedor2 {
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+}
+
+                                                                             /* contenedor */
+
+.texto__con--imagen {
+    padding-left: 15px;
+    color: yellow;
+}
+.texto {
+    padding-left: 15px;
+    background-color: rgba(63, 63, 63, 0.685);
+    border-radius: 4px;
+    color: yellow;
+}
+
+.email {
+    color: yellow;
+    background-color: rgb(63, 63, 63);
+    border-radius: 4px;
+}
+
+.email:hover {
+    color: red;
+}
+
+                                                                                /* grilla */
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav contenido contenido"
+    "footer footer footer";
+    grid-template-rows: 75px 1fr 75px; 
+    grid-template-columns: 200px auto 15%;
+}
+
+
+.footer {
+    margin-top: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(14, 14, 0);
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-section {
+    color: yellow;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+section#contenido{
+    grid-area: contenido;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(14, 14, 0);
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(14, 14, 0);
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+                                                                                /* principal */
+.principal {
+    padding-top: 20px;
+    margin-top: 5vh;
+}
+
+.principal__contacto {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.principal__contacto__botonenviar {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
+
+.principal__contacto>form {
+    width: 30rem;
+}
+
+.principal-text {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+                                                                              /* input */
+
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    width: 10rem;
+    background-color: yellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+                                                                             /* media */
+
+@media only screen and (max-width: 600px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .foto__dojo {
+        width: 350px;
+        height: 350px;
+    }
+    .foto__mapa {
+        width: 350px;
+        height: 350px;
+    }
+    .profesor {
+        margin-left: 14%;
+        width: 300px;
+        height: 300px;  
+        }
+    .foto__ninja--agachado {
+        width: 350px;
+        height: 350px;  
+    }
+    .titulo__secundario {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        text-align: center;
+        background-color: yellow;
+        background-size: 300px;
+    }
+    ul li {
+        float: none;
+        margin-right: 20px;
+        overflow: hidden;
+        list-style: none;
+        display: grid;
+    }
+    .titulo__principal {
+        display: grid;
+        color: white;
+        margin-right: 35px;
+    }
+    #foto-kunai {
+        width: 350px;
+        height: 350px;
+    }
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "contenido"
+        "footer";
+        grid-template-rows: auto; 
+        grid-template-columns: auto auto auto auto;
+    }
+    .texto__con--imagen {
+        display: grid;
+        }
+    #video-kunai {
+        display: grid;
+        width: auto;
+        height: auto;
+    }
+    #foto-flor {
+        width: 100px;
+        height: 100px;
+        margin-left: 35px;
+    }
+    .icono-menu{
+        grid-area: header;
+        margin: 40px 50px;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .foto__dojo {
+        width: 400px;
+        height: 400px;
+    }
+    .foto__mapa {
+        width: 400px;
+        height: 400px;
+    }
+    .profesor {
+        margin-left: 23%;
+        width: 450px;
+        height: 450px;  
+        }
+}
+
+                                                                                /* Estilos para el ícono del Menú */
+.icono-menu{
+    grid-area: header;
+    margin: 10px 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+
+                                                                                /* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(42,42,42);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+                                                                                /* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+                                                                                /* Estilos para el listado del Menú */
+.cont-menu ol{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ol li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ol li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
